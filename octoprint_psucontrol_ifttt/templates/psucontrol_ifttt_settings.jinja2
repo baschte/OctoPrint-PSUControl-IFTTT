@@ -1,0 +1,19 @@
+<!-- ko ifnot: settings.plugins.psucontrol -->
+<span class="help-inline label label-important">This plugin requires <a href="https://plugins.octoprint.org/plugins/psucontrol/" target="_blank">PSU Control</a> in order to function. It can be installed from the Plugin Manager.</span>
+<!-- /ko -->
+
+<form class="form-horizontal">
+    <h4>General</h4>
+    <div class="control-group">
+        <label class="control-label">Webhook URL - power on</label>
+        <div class="controls">
+            <input type="text" required class="input" data-bind="value: settings.plugins.psucontrol_ifttt.start_url" placeholder="https://maker.ifttt.com/trigger/...">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Webhook URL - power off</label>
+        <div class="controls">
+            <input type="text" required class="input" data-bind="value: settings.plugins.psucontrol_ifttt.end_url" placeholder="https://maker.ifttt.com/trigger/...">
+        </div>
+    </div>
+</form>
